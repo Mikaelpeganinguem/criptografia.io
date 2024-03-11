@@ -1,4 +1,4 @@
-function repeticao(alfabeto, mensagem, deslocamento) {
+/* function repeticao(alfabeto, mensagem, deslocamento) {
     let palavra = ""
 
     for (let i = 0; i < mensagem.length; i++) {
@@ -44,3 +44,4 @@ function teste() {
 }
 
 //teste()
+*/
