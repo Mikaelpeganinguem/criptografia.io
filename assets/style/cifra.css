@@ -26,9 +26,25 @@ body{
     gap: 5px;
 }
 
-input{
+.info{
     width: 70%;
     padding: 2%;
+    gap: 1rem;
+    
+    & .aviso{
+        color: #ff352b;
+    }
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+input{
+    padding: 3%;
     outline: none;
     border-radius: 10px;
     border: 1px solid #000;
