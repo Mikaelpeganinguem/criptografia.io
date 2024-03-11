@@ -34,8 +34,9 @@ export function crypto(arrNumber) {
     const alfabeto = [" ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     let palavraCriptografada = '';
 
-    for (let i = 0; i < arrNumber.length; i++)
+    for (let i = 0; i < arrNumber.length; i++){
         palavraCriptografada += alfabeto[parseInt(arrNumber[i])];
+    }
     
 
     return palavraCriptografada;
@@ -48,9 +49,12 @@ export function somaValorLetra(text, senha) {
     let valorNovaMensagem = [];
 
     for (let i = 0; i < valorMensagem.length; i++) {
-        let soma = valorMensagem[i] + valorSenha[i]; //% valorSenha.length
-        if (soma > 26)
-            soma -= 26;
+        let soma = 0;
+        if(valorMensagem[i] !== 0){
+            soma = valorMensagem[i] + valorSenha[i % valorSenha.length];
+            if (soma > 26)
+                soma -= 26;
+        }
 
         valorNovaMensagem.push(soma);
     }
