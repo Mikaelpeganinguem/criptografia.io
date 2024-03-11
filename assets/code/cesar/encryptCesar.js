@@ -1,30 +1,30 @@
-export function criptografia(mensagem, deslocamento) {
-    let alfabeto = ' abcdefghijklmnopqrstuvwxyz';
-    let palavraCriptografada = '';
+import {criptografia} from "./encryptCesar.js";
+import {descriptografiaDeCesar} from "./decryptCesar.js";
 
-    for (let i = 0; i < mensagem.length; i++) {
-        let convertido = mensagem[i].toLowerCase();
+document.getElementById("encryptCes").addEventListener("click",function(event) {
+    let mensagem = document.getElementById("mensagem").value.toLowerCase();
+    let deslocamento = parseInt(document.getElementById("desloc").value);
+        
+    let encrypt = criptografia(mensagem, deslocamento);
+    document.getElementById("result").innerText = encrypt;
+});
 
-        if (convertido === " ") {
-            palavraCriptografada += " ";
-        } else {
-            let indiceAlfabeto = alfabeto.indexOf(convertido);
-            if (indiceAlfabeto !== -1) {
-                let novoIndice = (indiceAlfabeto + deslocamento) % 27;
-                let novoCaractere = alfabeto[novoIndice];
 
-                if (mensagem[i] === mensagem[i].toUpperCase()) {
-                    palavraCriptografada += novoCaractere.toUpperCase();
-                } else {
-                    palavraCriptografada += novoCaractere;
-                }
-            } else {
-                palavraCriptografada += mensagem[i];
-            }
-        }
-    }
+document.getElementById("decryptCes").addEventListener("click", function(event){
+    let mensagem = document.getElementById("mensagem").value.toLowerCase();
+    
+    let deslocamento = parseInt(document.getElementById("desloc").value);
+    let decrypt = descriptografiaDeCesar(mensagem, deslocamento);
+    document.getElementById("result").innerText = decrypt
+    
+});
+    
+document.getElementById("toClean").addEventListener("click", function(event) {
+    document.getElementById("mensagem").value = '';
+    document.getElementById("desloc").value = '';
+    document.getElementById("result").value = '';
+});
 
-    return palavraCriptografada;
-}
-
-/* console.log(criptografia("okay",)); */
+document.getElementById("refresh").addEventListener("click", function(event) {
+    location.reload();
+});
