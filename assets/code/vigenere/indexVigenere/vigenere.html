@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../../style/cifra.css">
+    <link rel="icon" href="../../../style/SVG/asterisk.svg">
+    <script type="module" src="../main.js" defer></script>
+    <title>Cifra de Vigenére | MS</title>
+  </head>
+
+  <body>
+    <div class="container">
+        <h3>Cifra de Vigenére</h3>
+        <input type="text" placeholder="Digite a palavra / texto" id="mensagem" />
+        <input type="text" placeholder="Senha (texto)" id="key" />
+        <button id="encryptVig">Codificar</button>
+        <button id="decryptVig">Decodificar</button>
+        <textarea id="resul" placeholder="Resultado em Texto" disabled></textarea>
+        <div class="btns">
+            <!-- <button id="copiar">Copiar</button>-->
+            <button id="reload">Nova Criptografia</button>
+            <button id="toClean">Limpar Tudo</button>
+        </div>
+        <a href="../../../../index.html">Página inicial</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.escolher-cifra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; 
+}
+
+.escolhas {
+    flex-direction: row;
+    
+    & .botao {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #2b58ff;
+        color: blue;
+        background-color: #fff;
+    
+        &:hover, &:focus{
+           background-color: rgb(215, 211, 211);
+        }
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
