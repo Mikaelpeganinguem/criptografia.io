@@ -21,9 +21,12 @@ export function subValorLetra(crypt, senha) {
     let msgDecrypt = [];
 
     for (let i = 0; i < valorCrypt.length; i++) {
-        let sub = valorCrypt[i] - valorSenha[i];
-        if (sub < 0)
-            sub += 26;
+        let sub = 0;
+        if(valorCrypt[i] !== 0){
+            sub = valorCrypt[i] - valorSenha[i];
+            if (sub < 0)
+                sub += 26;
+        }
         msgDecrypt.push(sub);
     }
 
