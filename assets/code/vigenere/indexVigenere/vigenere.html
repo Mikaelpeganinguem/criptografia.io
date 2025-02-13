@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../../../style/cifra.css">
-    <link rel="icon" href="../../../style/SVG/asterisk.svg">
-    <script type="module" src="../main.js" defer></script>
-    <title>Cifra de Vigenére | MS</title>
-  </head>
 
-  <body>
-    <div class="info">
-        <h3>Cifra de Vigenére</h3>
-        <p><strong>COMO USAR?</strong> Você pode criptografar, ou decriptografar as suas mensagens. Nessa cifra você preenche assim:</p>
-        <p><strong>Mensagem: </strong> Coloque a palavra que você quer criptografar ou a palavra criptografada.</p>
-        <p><strong>Senha: </strong>Digite uma palavra que será a sua senha. Nesse método <strong class="aviso">NÃO PODE USAR NÚMEROS COMO SENHA</strong>. Em vez de números, use qualquer palavra/letra como acesso para criptografar/decriptografar.</p></br>
-        <p>Logo após, use o método que preferir e terá o resultado abaixo tanto da palavra criptografada, quanto decriptografada</p>
-        <p><strong>OBS: </strong>Para cada criptografia/decriptogtafia, clique em: 'Nova criptografia'</p>
-        </div></br>
-    <div class="container">
-        <div class="entrada">
-            <label>Mensagem:</label>
-            <input type="text" placeholder="Digite a palavra / texto" id="mensagem" />
-        </div>
-        <div class="entrada">
-            <label>Senha:</label>
-            <input type="text" placeholder="Senha (texto)" id="key" />
-        </div>
-        <button id="encryptVig">Codificar</button>
-        <button id="decryptVig">Decodificar</button>
-        <textarea id="resul" placeholder="Resultado em Texto" disabled></textarea>
-        <div class="btns">
-            <!-- <button id="copiar">Copiar</button>-->
-            <button id="reload">Nova Criptografia</button>
-            <button id="toClean">Limpar Tudo</button>
-        </div>
-        <a href="../../../../index.html">Página inicial</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../../style/cifra.css">
+  <link rel="icon" href="../../../style/SVG/asterisk.svg">
+  <script type="module" src="../main.js" defer></script>
+  <title>Cifra de Vigenére | MS</title>
+</head>
+
+<body>
+  <div class="info">
+    <h3>Cifra de Vigenére</h3>
+    <div class="infoText">
+      <p><strong>COMO USAR?</strong> Você pode criptografar, ou decriptografar as suas mensagens. Nessa cifra você
+        preenche assim: <br>
+      <strong>Mensagem: </strong> Coloque a palavra que você quer criptografar ou a palavra criptografada. <br>
+      <strong>Senha: </strong>Digite uma palavra que será a sua senha. Nesse método <strong class="aviso">NÃO PODE
+          USAR NÚMEROS COMO SENHA</strong>. Em vez de números, use qualquer palavra/letra como acesso para
+        criptografar/decriptografar. <br>
+      Logo após, use o método que preferir e terá o resultado abaixo tanto da palavra criptografada, quanto
+        decriptografada <br>
+      <strong>OBS: </strong>Para cada criptografia/decriptogtafia, clique em: 'Nova criptografia'</p>
     </div>
-  </body>
+  </div></br>
+  <div class="container">
+    <div class="entrada">
+      <label>Mensagem:</label>
+      <input type="text" placeholder="Digite a palavra / texto" id="mensagem" />
+    </div>
+    <div class="entrada">
+      <label>Senha:</label>
+      <input type="text" placeholder="Senha (texto)" id="key" />
+    </div>
+    <button id="encryptVig">Codificar</button>
+    <button id="decryptVig">Decodificar</button>
+    <textarea id="resul" placeholder="Resultado em Texto" disabled></textarea>
+    <div class="btns">
+      <!-- <button id="copiar">Copiar</button>-->
+      <button id="reload">Nova Criptografia</button>
+      <button id="toClean">Limpar Tudo</button>
+    </div>
+    <a href="../../../../index.html">Página inicial</a>
+  </div>
+</body>
+
 </html>
