@@ -1,6 +1,5 @@
 ﻿# MINIPROJETO - CRIPTOGRAFIA
 
---
 
 ### PROFESSOR
 
@@ -13,7 +12,6 @@
 
 ## CONTEÚDO CONSULTADO PARA REALIZAÇÃO DO PROJETO
 
---
 
 ### SITES
 
@@ -42,7 +40,6 @@
 
 ## PERGUNTAS
 
---
 
 **PERGUNTA** 1
 
